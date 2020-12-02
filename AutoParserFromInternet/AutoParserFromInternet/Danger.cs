@@ -16,6 +16,6 @@ namespace AutoParserFromInternet
         public bool ConfidenceProblem { get; set; }
         public  bool FullnesProblem { get; set; }
 
-
+        public List<Danger> dangersList = new List<Danger>();
     }
 }
