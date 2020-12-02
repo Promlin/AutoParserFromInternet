@@ -15,6 +15,7 @@ namespace AutoParserFromInternet
         public string SubjectOfThreat { get; set; }
         public bool ConfidenceProblem { get; set; }
         public  bool FullnesProblem { get; set; }
+        public bool AccessRroblem { get; set; }
 
         public List<Danger> dangersList = new List<Danger>();
 

@@ -46,9 +46,12 @@ namespace AutoParserFromInternet
 
             var file_name = dialog.FileName;
 
+
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
-            ExcelFile excelBook = ExcelFile.Load(file_name);
-            ExcelWorksheet excelSheet = excelBook.Worksheets[0];
+            var excelFile = DataController.ParseExcel(file_name);
+           
+            //ExcelFile excelBook = ExcelFile.Load(file_name);
+            //ExcelWorksheet excelSheet = excelBook.Worksheets[0];
         }
 
         private void OnDownloadButtonCLick(object sender, RoutedEventArgs e)   //for loading file from internet
@@ -76,8 +79,9 @@ namespace AutoParserFromInternet
             var file_name = dialog.FileName;
 
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
-            ExcelFile excelBook = ExcelFile.Load(file_name);
-            ExcelWorksheet excelSheet = excelBook.Worksheets[0];
+            var excelFile = DataController.ParseExcel(file_name);
+            //ExcelFile excelBook = ExcelFile.Load(file_name);
+            //ExcelWorksheet excelSheet = excelBook.Worksheets[0];
 
 
         }
