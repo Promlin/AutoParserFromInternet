@@ -5,8 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoParserFromInternet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="DataParcer" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="361*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="ReloadData" Content="Обновить" HorizontalAlignment="Left" Margin="673,10,0,0" VerticalAlignment="Top" Width="75" Height="19" Click="OnReloadDataClick"/>
+        <Button x:Name="DownloadData" Content="Загрузить" HorizontalAlignment="Left" Margin="566,10,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+        <Menu x:Name="MainMenu"  Grid.Row="1" Grid.RowSpan="2">
+            <MenuItem x:Name="AboutDangerButton" Header="Общий перечень угроз"></MenuItem>
+            <MenuItem x:Name="AboutDataButton" Header="Об угрозах"></MenuItem>
+            <MenuItem x:Name="ExitButton" Header="Выход" Click="OnCloseButtonClick"></MenuItem>
+        </Menu>
+
+        <ListBox x:Name="lst" Grid.Row="2" Margin="27,26.8,28.6,38">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="100" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBox x:Name="IdColumn" Text="{Binding Id}" />
+                        <TextBox Text="{Binding Name}" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>

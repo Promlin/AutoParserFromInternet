@@ -1,0 +1,15 @@
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\bin\Debug\AutoParserFromInternet.exe.config
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\bin\Debug\AutoParserFromInternet.exe
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\bin\Debug\AutoParserFromInternet.pdb
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.csprojAssemblyReference.cache
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\MainWindow.g.cs
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\App.g.cs
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet_MarkupCompile.cache
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet_MarkupCompile.lref
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\MainWindow.baml
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.g.resources
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.Properties.Resources.resources
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.csproj.GenerateResource.cache
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.csproj.CoreCompileInputs.cache
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.exe
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.pdb
