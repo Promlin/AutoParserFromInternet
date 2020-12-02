@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutoParserFromInternet
 {
-    internal class Danger
+    public class Danger
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -17,8 +17,10 @@ namespace AutoParserFromInternet
         public  bool FullnesProblem { get; set; }
         public bool AccessRroblem { get; set; }
 
-        public List<Danger> dangersList = new List<Danger>();
+        public List<Danger> dangersList { get; set; } = new List<Danger>();
 
         HashSet<Danger> dangersHash = new HashSet<Danger>();
+
+        public override string ToString() => Id.ToString();
     }
 }

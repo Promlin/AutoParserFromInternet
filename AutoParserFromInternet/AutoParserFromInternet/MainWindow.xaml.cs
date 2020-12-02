@@ -23,6 +23,7 @@ namespace AutoParserFromInternet
     /// </summary>
     public partial class MainWindow : Window
     {
+        DataController dataController = new DataController();
 
         public MainWindow()
         {
@@ -48,7 +49,7 @@ namespace AutoParserFromInternet
 
 
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
-            var excelFile = DataController.ParseExcel(file_name);
+            var excelFile = dataController.ParseExcel(file_name);
            
             //ExcelFile excelBook = ExcelFile.Load(file_name);
             //ExcelWorksheet excelSheet = excelBook.Worksheets[0];
@@ -79,7 +80,7 @@ namespace AutoParserFromInternet
             var file_name = dialog.FileName;
 
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
-            var excelFile = DataController.ParseExcel(file_name);
+            var excelFile = dataController.ParseExcel(file_name);
             //ExcelFile excelBook = ExcelFile.Load(file_name);
             //ExcelWorksheet excelSheet = excelBook.Worksheets[0];
 

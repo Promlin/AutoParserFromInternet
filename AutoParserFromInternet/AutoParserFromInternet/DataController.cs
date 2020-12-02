@@ -8,10 +8,11 @@ using System.Threading.Tasks;
 
 namespace AutoParserFromInternet
 {
-    internal class DataController
+    public class DataController
     {
-        public static List<Danger> dangersList = new List<Danger>();
-        public static Task<DataTable> ParseExcel(string filePath)
+        public List<Danger> dangersList = new List<Danger>();
+
+        public Task<DataTable> ParseExcel(string filePath)
         {
             return Task.Run(() =>
             {
@@ -42,7 +43,7 @@ namespace AutoParserFromInternet
                     int AccessProblem = (int)excelSheet.Cells[i, 7].Value;
                     if (AccessProblem == 1) { danger.AccessRroblem = true; } else { danger.AccessRroblem = false; }
 
-                    dangersList.Add(danger);
+                    //dataController.dangersList.Add(danger);
                 }
                 
 
