@@ -17,5 +17,7 @@ namespace AutoParserFromInternet
         public  bool FullnesProblem { get; set; }
 
         public List<Danger> dangersList = new List<Danger>();
+
+        HashSet<Danger> dangersHash = new HashSet<Danger>();
     }
 }

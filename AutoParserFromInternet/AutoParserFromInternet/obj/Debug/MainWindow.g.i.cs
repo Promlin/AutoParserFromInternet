@@ -67,39 +67,23 @@ namespace AutoParserFromInternet {
         
         #line 18 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Menu MainMenu;
+        internal System.Windows.Controls.Button CloseButton;
         
         #line default
         #line hidden
         
         
-        #line 19 "..\..\MainWindow.xaml"
+        #line 22 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.MenuItem AboutDangerButton;
+        internal System.Windows.Controls.TabItem AboutDangerButton;
         
         #line default
         #line hidden
         
         
-        #line 20 "..\..\MainWindow.xaml"
+        #line 36 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.MenuItem AboutDataButton;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 21 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.MenuItem ExitButton;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 24 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.ListBox lst;
+        internal System.Windows.Controls.TabItem AboutDataButton;
         
         #line default
         #line hidden
@@ -162,25 +146,19 @@ namespace AutoParserFromInternet {
             #line hidden
             return;
             case 4:
-            this.MainMenu = ((System.Windows.Controls.Menu)(target));
-            return;
-            case 5:
-            this.AboutDangerButton = ((System.Windows.Controls.MenuItem)(target));
-            return;
-            case 6:
-            this.AboutDataButton = ((System.Windows.Controls.MenuItem)(target));
-            return;
-            case 7:
-            this.ExitButton = ((System.Windows.Controls.MenuItem)(target));
+            this.CloseButton = ((System.Windows.Controls.Button)(target));
             
-            #line 21 "..\..\MainWindow.xaml"
-            this.ExitButton.Click += new System.Windows.RoutedEventHandler(this.OnCloseButtonClick);
+            #line 18 "..\..\MainWindow.xaml"
+            this.CloseButton.Click += new System.Windows.RoutedEventHandler(this.OnCloseButtonClick);
             
             #line default
             #line hidden
             return;
-            case 8:
-            this.lst = ((System.Windows.Controls.ListBox)(target));
+            case 5:
+            this.AboutDangerButton = ((System.Windows.Controls.TabItem)(target));
+            return;
+            case 6:
+            this.AboutDataButton = ((System.Windows.Controls.TabItem)(target));
             return;
             }
             this._contentLoaded = true;
