@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using GemBox.Spreadsheet;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,7 +33,23 @@ namespace AutoParserFromInternet
             Close();
         }
 
-        private void OnReloadDataClick(object sender, RoutedEventArgs e)
+        private void OnReloadDataClick(object sender, RoutedEventArgs e)  //for reading file from computer
+        {
+            var dialog = new OpenFileDialog
+            {
+                Title = "Выбор файла для загрузки",
+                //Filter = "Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*"
+                
+            };
+            if (dialog.ShowDialog() != true) return;
+
+            var file_name = dialog.FileName;
+
+            ExcelFile excelBook = ExcelFile.Load(file_name);
+            ExcelWorksheet excelSheet = excelBook.Worksheets[0];
+        }
+
+        private void OnDownloadButtonCLick(object sender, RoutedEventArgs e)   //for loading file from internet
         {
             var dialog = new OpenFileDialog
             {
@@ -40,6 +57,27 @@ namespace AutoParserFromInternet
                 //Filter = "Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*"
 
             };
+            if (dialog.ShowDialog() != true) return;
+            
+        }
+
+        private void OnOpenDataButtonClick(object sender, RoutedEventArgs e)  //for openong computer file
+        {
+            var dialog = new OpenFileDialog
+            {
+                Title = "Выбор файла для загрузки",
+                //Filter = "Текстовые файлы (*.txt)|*.txt|Все файлы (*.*)|*.*"
+
+            };
+            if (dialog.ShowDialog() != true) return;
+
+            var file_name = dialog.FileName;
+
+            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
+            ExcelFile excelBook = ExcelFile.Load(file_name);
+            ExcelWorksheet excelSheet = excelBook.Worksheets[0];
+
+
         }
     }
 }

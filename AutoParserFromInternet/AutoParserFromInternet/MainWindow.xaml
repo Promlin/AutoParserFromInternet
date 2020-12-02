@@ -13,7 +13,8 @@
             <RowDefinition Height="361*"/>
         </Grid.RowDefinitions>
         <Button x:Name="ReloadData" Content="Обновить" HorizontalAlignment="Left" Margin="673,10,0,0" VerticalAlignment="Top" Width="75" Height="19" Click="OnReloadDataClick"/>
-        <Button x:Name="DownloadData" Content="Загрузить" HorizontalAlignment="Left" Margin="566,10,0,0" VerticalAlignment="Top" Width="75" Height="19"/>
+        <Button x:Name="DownloadData" Content="Загрузить" HorizontalAlignment="Left" Margin="566,10,0,0" VerticalAlignment="Top" Width="75" Height="19" Click="OnDownloadButtonCLick"/>
+        <Button x:Name="OpenDataButton" Content="Открыть" HorizontalAlignment="Left" Margin="455,10,0,0" VerticalAlignment="Top" Width="75" Click="OnOpenDataButtonClick"/>
         <Menu x:Name="MainMenu"  Grid.Row="1" Grid.RowSpan="2">
             <MenuItem x:Name="AboutDangerButton" Header="Общий перечень угроз"></MenuItem>
             <MenuItem x:Name="AboutDataButton" Header="Об угрозах"></MenuItem>
@@ -34,5 +35,6 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        
     </Grid>
 </Window>

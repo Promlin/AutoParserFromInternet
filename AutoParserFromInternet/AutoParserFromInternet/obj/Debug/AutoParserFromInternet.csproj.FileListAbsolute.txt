@@ -13,3 +13,6 @@ D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInt
 D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.csproj.CoreCompileInputs.cache
 D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.exe
 D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.pdb
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\bin\Debug\GemBox.Spreadsheet.dll
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\bin\Debug\GemBox.Spreadsheet.xml
+D:\C#Course\lab2\AutoParserFromInternet\AutoParserFromInternet\AutoParserFromInternet\obj\Debug\AutoParserFromInternet.csproj.CopyComplete
