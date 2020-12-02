@@ -45,6 +45,7 @@ namespace AutoParserFromInternet
 
             var file_name = dialog.FileName;
 
+            SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
             ExcelFile excelBook = ExcelFile.Load(file_name);
             ExcelWorksheet excelSheet = excelBook.Worksheets[0];
         }

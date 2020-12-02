@@ -21,7 +21,7 @@
             <MenuItem x:Name="ExitButton" Header="Выход" Click="OnCloseButtonClick"></MenuItem>
         </Menu>
 
-        <ListBox x:Name="lst" Grid.Row="2" Margin="27,26.8,28.6,38">
+        <ListBox x:Name="lst" Grid.Row="2" Margin="27,9.8,28.6,38">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid>
