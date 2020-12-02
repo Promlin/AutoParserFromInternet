@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace AutoParserFromInternet
 {
-    class Danger
+    internal class Danger
     {
-        int Id { get; set; }
-        string Name { get; set; }
-        string Discription { get; set; }
-        string SourceOfThrear { get; set; }
-        string SubjectOfThreat { get; set; }
-        bool ConfidenceProblem { get; set; }
-        bool FullnesProblem { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Discription { get; set; }
+        public string SourceOfThrear { get; set; }
+        public string SubjectOfThreat { get; set; }
+        public bool ConfidenceProblem { get; set; }
+        public  bool FullnesProblem { get; set; }
 
 
     }
