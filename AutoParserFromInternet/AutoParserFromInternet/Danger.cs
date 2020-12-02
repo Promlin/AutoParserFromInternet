@@ -8,7 +8,7 @@ namespace AutoParserFromInternet
 {
     public class Danger
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Discription { get; set; }
         public string SourceOfThrear { get; set; }

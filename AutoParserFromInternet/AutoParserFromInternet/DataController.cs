@@ -25,23 +25,23 @@ namespace AutoParserFromInternet
 
                 string test = (string)excelSheet.Cells[1, 1].Value;
 
-                for(int i = 0; i < 150; i++)
+                for(int i = 0; i < 100; i++)
                 {
                     Danger danger = new Danger();
-                    danger.Id = (int)excelSheet.Cells[i, 0].Value;
+                    danger.Id = (string)excelSheet.Cells[i, 0].Value.ToString();
                     danger.Name = (string)excelSheet.Cells[i, 1].Value;
                     danger.Discription = (string)excelSheet.Cells[i, 2].Value;
                     danger.SourceOfThrear = (string)excelSheet.Cells[i, 3].Value;
                     danger.SubjectOfThreat = (string)excelSheet.Cells[i, 4].Value;
 
-                    int ConfidenceProblem = (int)excelSheet.Cells[i, 5].Value;
-                    if(ConfidenceProblem == 1) { danger.ConfidenceProblem = true; } else { danger.ConfidenceProblem = false; }
+                    string ConfidenceProblem = (string)excelSheet.Cells[i, 5].Value.ToString();
+                    if(ConfidenceProblem == "1") { danger.ConfidenceProblem = true; } else { danger.ConfidenceProblem = false; }
 
-                    int FullnessProblem = (int)excelSheet.Cells[i, 6].Value;
-                    if (FullnessProblem == 1) { danger.FullnesProblem = true; } else { danger.FullnesProblem = false; }
+                    string FullnessProblem = (string)excelSheet.Cells[i, 6].Value.ToString();
+                    if (FullnessProblem == "1") { danger.FullnesProblem = true; } else { danger.FullnesProblem = false; }
 
-                    int AccessProblem = (int)excelSheet.Cells[i, 7].Value;
-                    if (AccessProblem == 1) { danger.AccessRroblem = true; } else { danger.AccessRroblem = false; }
+                    string AccessProblem = (string)excelSheet.Cells[i, 7].Value.ToString();
+                    if (AccessProblem == "1") { danger.AccessRroblem = true; } else { danger.AccessRroblem = false; }
 
                     //dataController.dangersList.Add(danger);
                 }
